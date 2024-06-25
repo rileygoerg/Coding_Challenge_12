@@ -5,17 +5,21 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="example.js"></script>
     <title>Coding Challenge 12</title>
-</head>
+    <style>
+        .bar{
+            fill:firebrick;
+        }
+    </style>
+   </head>
 <body onload="main()">
-    <form id="filterStock">
-        <label for="chooseStock">Choose A Stock:</label>
-        <select name="chooseStock" id="chooseChoice" ></select>
+    <form id="stockFilters">
+        <label for="chooseStock">Choose a Stock:</label>
+        <select name="chooseStock" id="stockChoice" ></select>
 
-        <label for="filterDate">Date Range:</label>
+        <label for="chooseDate">Select a Date Range:</label>
         <input type="date" id="startDate">
         <input type="date" id="endDate">
-
-        <input type="submit" value="submit">
     </form>
+    <svg width="600" height="600"></svg>
 </body>
 </html>
