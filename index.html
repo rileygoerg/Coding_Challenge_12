@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="example.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Coding Challenge 12</title>
-    <style>
-        .bar{
-            fill:firebrick;
-        }
-    </style>
+   
    </head>
 <body onload="main()">
-    <form id="stockFilters">
-        <label for="chooseStock">Choose a Stock:</label>
-        <select name="chooseStock" id="stockChoice" ></select>
-
-        <label for="chooseDate">Select a Date Range:</label>
-        <input type="date" id="startDate">
-        <input type="date" id="endDate">
-    </form>
+    <div id="tooltip" class="hidden">
+        <p><strong>Date: </strong></p>
+        <p><span id="date"></span></p>
+        <p><strong>Price: </strong></p>
+        <p><span id="value"></span></p>
+    </div>
+    <button id="Apple" onclick="updateGraph(this.id)">Apple</button>
+    <button id="Google" onclick="updateGraph(this.id)">Google</button>
     <svg width="600" height="600"></svg>
 </body>
 </html>
