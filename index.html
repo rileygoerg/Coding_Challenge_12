@@ -15,8 +15,10 @@
         <p><strong>Price: </strong></p>
         <p><span id="value"></span></p>
     </div>
-    <button id="Apple" onclick="updateGraph(this.id)">Apple</button>
-    <button id="Google" onclick="updateGraph(this.id)">Google</button>
+    <button id="Apple" onclick="updateGraph(this.id)">Apple</button> <!--Selects Apple data whenever button is clicked-->
+    <button id="Google" onclick="updateGraph(this.id)">Google</button><br> <!--Selects Google data whenever button is clicked-->
+    <h3>Select a stock from above to visualize its price over time. Hover over a bar for more information.</h3>
+    <h4 id="hover">Nothing Loading? Hover here.</h4>
     <svg width="600" height="600"></svg>
 </body>
 </html>
